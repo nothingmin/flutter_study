@@ -1,3 +1,4 @@
+import 'package:day9/widgets/card_widget.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -112,316 +113,43 @@ class HomeScreen extends StatelessWidget {
           Expanded(
             child: Column(
               children: [
-                Flexible(
-                    flex: 1,
-                    child: Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(40),
-                        color: const Color(0xFFfef754),
-                      ),
-                      child: const Padding(
-                        padding: EdgeInsets.only(
-                          left: 20,
-                          top: 30,
-                          bottom: 5,
-                          right: 40,
-                        ),
-                        child: Row(
-                          children: [
-                            Column(
-                              children: [
-                                Text(
-                                  "11",
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                  ),
-                                ),
-                                Text(
-                                  "30",
-                                  style: TextStyle(
-                                    fontSize: 15,
-                                  ),
-                                ),
-                                Text(
-                                  "|",
-                                  style: TextStyle(
-                                    fontSize: 15,
-                                  ),
-                                ),
-                                Text(
-                                  "12",
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                  ),
-                                ),
-                                Text(
-                                  "30",
-                                  style: TextStyle(
-                                    fontSize: 15,
-                                  ),
-                                ),
-                              ],
-                            ),
-                            SizedBox(
-                              width: 20,
-                            ),
-                            Expanded(
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    "DESIGN MEETING",
-                                    style: TextStyle(
-                                      fontSize: 50,
-                                      fontWeight: FontWeight.w500,
-                                      height: 1,
-                                    ),
-                                  ),
-                                  Expanded(
-                                    child: Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        Text(
-                                          "ALEX",
-                                          style: TextStyle(
-                                            fontSize: 15,
-                                            color: Colors.grey,
-                                          ),
-                                        ),
-                                        Text(
-                                          "HELENA",
-                                          style: TextStyle(
-                                            fontSize: 15,
-                                            color: Colors.grey,
-                                          ),
-                                        ),
-                                        Text(
-                                          "NANA",
-                                          style: TextStyle(
-                                            fontSize: 15,
-                                            color: Colors.grey,
-                                          ),
-                                        )
-                                      ],
-                                    ),
-                                  )
-                                ],
-                              ),
-                            )
-                          ],
-                        ),
-                      ),
-                    )),
-                Flexible(
-                    flex: 1,
-                    child: Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(40),
-                        color: const Color(0xFF9c6bce),
-                      ),
-                      child: const Padding(
-                        padding: EdgeInsets.only(
-                          left: 20,
-                          top: 30,
-                          bottom: 5,
-                          right: 40,
-                        ),
-                        child: Row(
-                          children: [
-                            Column(
-                              children: [
-                                Text(
-                                  "12",
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                  ),
-                                ),
-                                Text(
-                                  "35",
-                                  style: TextStyle(
-                                    fontSize: 15,
-                                  ),
-                                ),
-                                Text(
-                                  "|",
-                                  style: TextStyle(
-                                    fontSize: 15,
-                                  ),
-                                ),
-                                Text(
-                                  "14",
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                  ),
-                                ),
-                                Text(
-                                  "10",
-                                  style: TextStyle(
-                                    fontSize: 15,
-                                  ),
-                                ),
-                              ],
-                            ),
-                            SizedBox(
-                              width: 20,
-                            ),
-                            Expanded(
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    "DAILY PROJECT",
-                                    style: TextStyle(
-                                      fontSize: 50,
-                                      fontWeight: FontWeight.w500,
-                                      height: 1,
-                                    ),
-                                  ),
-                                  Expanded(
-                                    child: Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        Text(
-                                          "ME",
-                                          style: TextStyle(
-                                            fontSize: 15,
-                                            color: Colors.black,
-                                          ),
-                                        ),
-                                        Text(
-                                          "RICHARD",
-                                          style: TextStyle(
-                                            fontSize: 15,
-                                            color: Colors.grey,
-                                          ),
-                                        ),
-                                        Text(
-                                          "CIRY",
-                                          style: TextStyle(
-                                            fontSize: 15,
-                                            color: Colors.grey,
-                                          ),
-                                        ),
-                                        Text(
-                                          "+4",
-                                          style: TextStyle(
-                                            fontSize: 15,
-                                            color: Colors.grey,
-                                          ),
-                                        )
-                                      ],
-                                    ),
-                                  )
-                                ],
-                              ),
-                            )
-                          ],
-                        ),
-                      ),
-                    )),
-                Flexible(
-                    flex: 1,
-                    child: Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(40),
-                        color: const Color(0xFF9abd4b),
-                      ),
-                      child: const Padding(
-                        padding: EdgeInsets.only(
-                          left: 20,
-                          top: 30,
-                          bottom: 5,
-                          right: 40,
-                        ),
-                        child: Row(
-                          children: [
-                            Column(
-                              children: [
-                                Text(
-                                  "15",
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                  ),
-                                ),
-                                Text(
-                                  "00",
-                                  style: TextStyle(
-                                    fontSize: 15,
-                                  ),
-                                ),
-                                Text(
-                                  "|",
-                                  style: TextStyle(
-                                    fontSize: 15,
-                                  ),
-                                ),
-                                Text(
-                                  "16",
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                  ),
-                                ),
-                                Text(
-                                  "30",
-                                  style: TextStyle(
-                                    fontSize: 15,
-                                  ),
-                                ),
-                              ],
-                            ),
-                            SizedBox(
-                              width: 20,
-                            ),
-                            Expanded(
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    "WEEKLY PLANNING",
-                                    style: TextStyle(
-                                      fontSize: 50,
-                                      fontWeight: FontWeight.w500,
-                                      height: 1,
-                                    ),
-                                  ),
-                                  Expanded(
-                                    child: Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        Text(
-                                          "DEN",
-                                          style: TextStyle(
-                                            fontSize: 15,
-                                            color: Colors.grey,
-                                          ),
-                                        ),
-                                        Text(
-                                          "NANA",
-                                          style: TextStyle(
-                                            fontSize: 15,
-                                            color: Colors.grey,
-                                          ),
-                                        ),
-                                        Text(
-                                          "MARK",
-                                          style: TextStyle(
-                                            fontSize: 15,
-                                            color: Colors.grey,
-                                          ),
-                                        )
-                                      ],
-                                    ),
-                                  )
-                                ],
-                              ),
-                            )
-                          ],
-                        ),
-                      ),
-                    )),
+                CardWidget(
+                  color: Color(0xFFffed50),
+                  todo: "DESIGN MEETING",
+                  participants: [
+                    "ALEX",
+                    "HELENA",
+                    "NANA",
+                  ],
+                  startTime: DateTime.now(),
+                  endTime: DateTime.now(),
+                ),
+                CardWidget(
+                  color: Color(0xFFa075d2),
+                  todo: "DAILY PROJECT",
+                  participants: [
+                    "ME",
+                    "RICHARD",
+                    "CIRY",
+                    "GWAK",
+                    "BUM",
+                    "GYU",
+                    "AAA",
+                  ],
+                  startTime: DateTime.now(),
+                  endTime: DateTime.now(),
+                ),
+                CardWidget(
+                  color: Color(0xFF9bb249),
+                  todo: "WEEKLY PLANNING",
+                  participants: [
+                    "DEN",
+                    "NANA",
+                    "MARK",
+                  ],
+                  startTime: DateTime.timestamp(),
+                  endTime: DateTime.timestamp(),
+                ),
               ],
             ),
           )
