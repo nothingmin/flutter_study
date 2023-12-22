@@ -14,14 +14,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         theme: ThemeData(
           colorScheme: ColorScheme.fromSwatch(
-            backgroundColor: const Color(0xFFE7626C),
+            backgroundColor: const Color(0xFFe64d3d),
           ),
           textTheme: const TextTheme(
             displayLarge: TextStyle(
               color: Color(0xFF232B55),
             ),
           ),
-          cardColor: const Color(0xFFF4EDDB),
+          cardColor: const Color(0xFFffffff),
         ),
         home: HomeScreen());
   }
