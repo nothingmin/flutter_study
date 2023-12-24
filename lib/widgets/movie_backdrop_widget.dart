@@ -1,11 +1,12 @@
 import 'package:flutter/cupertino.dart';
-import 'package:webflix/models/popular_movie_model.dart';
 import 'package:webflix/services/api_services.dart';
 
-class PopularMovieWidget extends StatelessWidget {
-  final PopularMovieModel movie;
+import '../models/movie_metadata_model.dart';
 
-  const PopularMovieWidget({
+class RectangleMovieImageWidget extends StatelessWidget {
+  final MovieMetadataModel movie;
+
+  const RectangleMovieImageWidget({
     super.key,
     required this.movie,
   });

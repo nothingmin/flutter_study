@@ -1,11 +1,12 @@
 import 'package:flutter/cupertino.dart';
-import 'package:webflix/models/coming_soon_movie_model.dart';
 import 'package:webflix/services/api_services.dart';
 
-class ComingSoonMovieWidget extends StatelessWidget {
-  final ComingSoonMovieModel movie;
+import '../models/movie_metadata_model.dart';
 
-  const ComingSoonMovieWidget({
+class MovieBackdropAndTitleWidget extends StatelessWidget {
+  final MovieMetadataModel movie;
+
+  const MovieBackdropAndTitleWidget({
     super.key,
     required this.movie,
   });
@@ -36,7 +37,7 @@ class ComingSoonMovieWidget extends StatelessWidget {
             overflow: TextOverflow.ellipsis,
             maxLines: 3,
             style: const TextStyle(
-              fontWeight: FontWeight.w500,
+              fontWeight: FontWeight.w400,
             ),
           ),
         )
