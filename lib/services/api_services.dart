@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
+import 'package:webflix/models/movie_detail_model.dart';
 import 'package:webflix/models/movie_metadata_model.dart';
 
 class ApiService {
@@ -10,6 +11,7 @@ class ApiService {
   static const String popular = "popular";
   static const String nowPlaying = "now-playing";
   static const String comingSoon = "coming-soon";
+  static const String movie = "movie";
 
   static Future<List<MovieMetadataModel>> getPopularMovies() async {
     final url = Uri.parse('$movieBaseUrl/$popular');
@@ -52,6 +54,16 @@ class ApiService {
         comingSoonMovies.add(MovieMetadataModel.fromJson(m));
       }
       return comingSoonMovies;
+    }
+    throw Error();
+  }
+
+  static Future<MovieDetailModel> getMovieById(int id) async {
+    final url = Uri.parse('$movieBaseUrl/$movie?id=$id');
+    final response = await http.get(url);
+    if (response.statusCode == 200) {
+      final dynamic movie = jsonDecode(response.body);
+      return MovieDetailModel.fromJson(movie);
     }
     throw Error();
   }
