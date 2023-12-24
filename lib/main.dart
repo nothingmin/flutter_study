@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:webflix/screens/home_screent.dart';
+import 'package:webflix/screens/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
